@@ -1,0 +1,1 @@
+import{_ as t,o as s,c as o,a as e}from"./index-86b53589.js";const _={},n={class:"about"},a=e("h1",null,"Hi, my name is Westyn Drake.",-1),c=e("p",null," This is my web site. It is a work in progress but at least I got SOMETHING on the page, right? ",-1),i=[a,c];function r(l,u){return s(),o("div",n,i)}const h=t(_,[["render",r]]);export{h as default};
