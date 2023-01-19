@@ -4,24 +4,29 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div class="flex flex-row">
+    <header class="p-10 w-2/5">
+      <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
 
-    <div class="wrapper">
-      <HelloWorld msg="Welcome to Westyn's webpage!" />
+      <div class="bg-gray-400 rounded-lg p-5">
+        <HelloWorld class="" msg="Welcome to Westyn's webpage!" />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+        <nav class="">
+          <RouterLink class="m-1" to="/">Home</RouterLink>
+          |
+          <RouterLink class="m-1" to="/about">About</RouterLink>
+          |
+          <RouterLink class="m-1" to="/contact">Contact</RouterLink>
+        </nav>
+      </div>
+    </header>
 
-  <RouterView />
+    <div class="py-10"><RouterView /></div>
+  </div>
 </template>
 
 <style scoped>
-header {
+/* header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -59,7 +64,6 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
   header {
     display: flex;
-    place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
 
@@ -69,7 +73,7 @@ nav a:first-of-type {
 
   header .wrapper {
     display: flex;
-    place-items: flex-start;
+
     flex-wrap: wrap;
   }
 
@@ -81,5 +85,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+} */
 </style>
